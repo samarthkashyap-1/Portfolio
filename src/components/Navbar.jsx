@@ -40,7 +40,7 @@ const Navbar = () => {
       } transition-all duration-300 ease-in-out`}
     >
      
-      <ul className="flex gap-10 md:gap-5 bg-white w-fit border-2 border-black px-7 py-3 rounded-lg  justify-center drop-shadow-2xl md:p-3">
+      <ul className="flex gap-10 sm:gap-5 bg-white w-fit border-2 border-black px-7 py-3 rounded-lg  justify-center drop-shadow-2xl sm:p-3">
         <li className="group cursor-pointer">
           <Tooltip title="Home">
             <Link to="home" smooth={true} duration={1000} offset={-10}>

@@ -97,9 +97,9 @@ const Projects = () => {
 
 
   return (
-    <div className=" p-20 flex flex-col gap-10 mt-20 md:p-6">
+    <div className=" p-20 flex flex-col gap-10 mt-20 sm:p-10">
       <Fade triggerOnce direction="up">
-        <h1 className="text-6xl font-semibold h-fit md:text-5xl">
+        <h1 className="text-6xl font-semibold h-fit sm:text-5xl">
           Here's my Garage
         </h1>
       </Fade>
@@ -113,7 +113,7 @@ const Projects = () => {
               <img
                 src={imgSrc}
                 alt={imgtodiplay().name}
-                className={`w-full rounded-lg ring-black ring-4 md:ring-2 md:h-44  ring-offset-4 shadow-2xl grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2 ${
+                className={`w-full rounded-lg ring-black ring-4 sm:ring-2 sm:h-44  ring-offset-4 shadow-2xl grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2 ${
                   change ? "opacity-0" : "opacity-100"
                 }`}
               />
@@ -122,18 +122,18 @@ const Projects = () => {
         </div>
 
         {/* Right side */}
-        <div className="flex-1 flex flex-col md:gap-20 ">
+        <div className="flex-1 flex flex-col sm:gap-20 ">
           {/* <Fade cascade damping={0.1}> */}
           {/* onetap */}
 
           <div
             ref={myref.onetap}
             id="onetap"
-            className=" h-screen flex p-10 flex-col gap-12 md:gap-6 md:p-0 md:mb-36 md:mt-10"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-16 sm:mt-10"
           >
             <Fade triggerOnce direction="up" className="h-screen flex ">
               <div>
-                <h1 className="text-5xl font-bold md:text-3xl">Onetap</h1>
+                <h1 className="text-5xl font-bold sm:text-3xl">Onetap</h1>
                 <h1 className="text-xl mt-10">
                   Onetap - the one-stop solution for creating a personalized
                   landing page for all your important links. With Onetap,
@@ -141,7 +141,7 @@ const Projects = () => {
                   Tap Away!{" "}
                 </h1>
               </div>
-              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8 w-full place-content-around">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>
@@ -191,11 +191,11 @@ const Projects = () => {
           <div
             ref={myref.glog}
             id="glog"
-            className=" h-screen flex p-10 flex-col gap-12 md:gap-6 md:p-0 md:mb-36 md:mt-10"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-20 "
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
-                <h1 className="text-5xl font-bold md:text-3xl">Glog</h1>
+                <h1 className="text-5xl font-bold sm:text-3xl">Glog</h1>
                 <h1 className="text-xl mt-10">
                   Embark on a journey of expression and creativity with Glog, a
                   full-stack blog website meticulously crafted using React,
@@ -205,7 +205,7 @@ const Projects = () => {
                   powerful features.
                 </h1>
               </div>
-              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8 w-full place-content-around">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>
@@ -252,7 +252,7 @@ const Projects = () => {
           <div
             ref={myref.feedback}
             id="feedback"
-            className=" h-screen flex p-10 flex-col gap-12 md:gap-6 md:p-0 md:mb-36 mt-36"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-20 mt-10"
           >
             <Fade
               triggerOnce
@@ -261,7 +261,7 @@ const Projects = () => {
               className="h-screen flex"
             >
               <div>
-                <h1 className="text-5xl font-bold md:text-3xl">Feedback App</h1>
+                <h1 className="text-5xl font-bold sm:text-3xl">Feedback App</h1>
                 <h1 className="text-xl mt-10">
                   In the dynamic landscape of education and continuous
                   improvement, the Feedback App stands as a testament to
@@ -271,7 +271,7 @@ const Projects = () => {
                   educational feedback is managed.{" "}
                 </h1>
               </div>
-              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8 w-full place-content-around">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>
@@ -321,11 +321,11 @@ const Projects = () => {
           <div
             ref={myref.chandrafarms}
             id="chandrafarms"
-            className=" h-screen flex p-10 flex-col gap-12 md:gap-8 md:p-0 md:mb-36 md:mt-52"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-8 sm:p-0 mb-10 sm:mt-44"
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
-                <h1 className="text-5xl font-bold md:text-3xl">
+                <h1 className="text-5xl font-bold sm:text-3xl">
                   Chandra Farms
                 </h1>
                 <h1 className="text-xl mt-10">
@@ -334,7 +334,7 @@ const Projects = () => {
                   captivating design to intuitive navigation.
                 </h1>
               </div>
-              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8 w-full place-content-around">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>

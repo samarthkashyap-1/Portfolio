@@ -11,8 +11,8 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div>
-      <div className="mx-auto h-screen px-20 md:px-6 ">
-        <div className="flex gap-5  justify-end mt-2 md:justify-center">
+      <div className="mx-auto h-screen px-20 sm:px-10 ">
+        <div className="flex gap-5  justify-end mt-2 sm:justify-center">
           <Fade cascade damping={0.2} triggerOnce delay={1000} direction="down">
             <a
               href="
@@ -59,15 +59,15 @@ const Home = () => {
           </Fade>
         </div>
         <div className="flex justify-between ">
-          <div className="flex md:flex-col ">
-            <div className="w-1/2 h-full md:w-full flex justify-center align-middle my-auto flex-col gap-6 md:mt-10">
+          <div className="flex sm:flex-col md:flex-col md:mt-10 ">
+            <div className="w-1/2 h-full md:w-full flex justify-center align-middle my-auto flex-col gap-6 sm:mt-10">
               <Fade triggerOnce direction="down">
-                <h1 className="text-8xl font-extrabold md:text-6xl">Hey there,</h1>
+                <h1 className="text-8xl font-extrabold sm:text-6xl">Hey there,</h1>
               </Fade>
               <Fade triggerOnce delay={200}>
-                <h1 className="text-xl leading-loose md:leading-relaxed ">
+                <h1 className="text-xl leading-loose sm:leading-relaxed ">
                   I'm{" "}
-                  <span className="font-semibold text-3xl md:text-2xl ">
+                  <span className="font-semibold text-3xl sm:text-2xl ">
                     Samarth Kashyap
                   </span>{" "}
                   , your friendly neighborhood <br />
@@ -86,16 +86,16 @@ const Home = () => {
 
               <Fade triggerOnce direction="up" className="mx-auto" delay={300}>
                 <Link to="contact" smooth={true} duration={1000} offset={-10}>
-                  <button className="px-10 py-4 text-xl mt-10 md:mt-2 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">
+                  <button className="px-10 py-4 text-xl mt-10 sm:mt-2 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">
                     Let's Chat
                   </button>
                 </Link>
               </Fade>
             </div>
 
-            <div className="flex-1 md:hidden">
+            <div className="flex-1 sm:hidden">
               <Fade direction="up" triggerOnce delay={300}>
-                <Lottie animationData={anima} />
+                <Lottie animationData={anima} className="md:w-[75%] mx-auto" />
               </Fade>
             </div>
           </div>

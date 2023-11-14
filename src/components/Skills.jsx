@@ -108,9 +108,9 @@ const Skills = () => {
    
   ];
   return (
-    <div className="px-20 flex flex-col gap-20 md:px-6 md:my-36 ">
+    <div className="px-20 flex flex-col gap-20 sm:px-10 sm:my-28  ">
       <Fade triggerOnce direction="up">
-        <h1 className="text-6xl font-semibold md:text-5xl md:mt-36 ">My Super{" "}powers</h1>
+        <h1 className="text-6xl font-semibold sm:text-5xl sm:mt-28  ">My Super{" "}Powers</h1>
       </Fade>
 
       <Fade triggerOnce delay={500} cascade direction="up">
@@ -133,7 +133,7 @@ const Skills = () => {
                   <img
                     src={skill?.img}
                     alt={skill?.name}
-                    className="w-36 grayscale group-hover:grayscale-0 group-hover:-translate-y-1 transition-all duration-500 ease-in-out aspect-square md:w-28 "
+                    className="w-36 grayscale group-hover:grayscale-0 group-hover:-translate-y-1 transition-all duration-300 ease-in-out aspect-square sm:w-28 "
                   />
                   <h1 className="text-xl font-semibold">{skill?.name}</h1>
                 </div>
