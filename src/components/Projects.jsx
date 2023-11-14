@@ -8,6 +8,24 @@ import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
 
+    const imageUrls = [
+      { name: "onetap", img: img, link: "https://onetap-jet.vercel.app/" },
+      {
+        name: "glog",
+        img: img2,
+        link: "https://glog.live",
+      },
+      {
+        name: "feedback",
+        img: img3,
+        link: "https://feedbackapp-r78n-samarthkashyap-1.vercel.app/",
+      },
+      {
+        name: "chandrafarms",
+        img: img4,
+        link: "https://chandrafarms.in",
+      },
+    ];
   const myref = {
     onetap: useRef(null),
     glog: useRef(null),
@@ -16,6 +34,9 @@ const Projects = () => {
   };
 
   const [activeSection, setActiveSection] = useState("onetap");
+  const [change, setchange] = useState(true);
+  const [imgSrc, setImgSrc] = useState();
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,37 +71,29 @@ const Projects = () => {
 
 
   const imgtodiplay = () => {
+    
      const foundElement = imageUrls.find((element) => element.name === activeSection);
 
   if (foundElement) {
-   
-    return foundElement;
+  
+  return foundElement;
   }
     return imageUrls[0];
   }
-  
- 
-  const imageUrls = [
-    { name: "onetap",
-    img: img,
-      link: "https://onetap-jet.vercel.app/",
-    },
-    {
-      name: "glog",
-      img: img2,
-      link: "https://glog.live",
-    },
-    {
-      name: "feedback",
-      img: img3,
-      link: "https://feedbackapp-r78n-samarthkashyap-1.vercel.app/",
-    },
-    {
-      name: "chandrafarms",
-      img: img4,
-      link: "https://chandrafarms.in",
-    },
-  ];
+
+
+
+    useEffect(() => {
+      
+      
+      setchange(true);
+      setTimeout(() => {
+        setImgSrc(imgtodiplay().img);
+        setchange(false);
+      }, 400);
+
+
+    }, [activeSection]);
 
 
   return (
@@ -96,16 +109,18 @@ const Projects = () => {
           <a target="_blank" href={imgtodiplay().link} className="my-auto ">
             <Fade triggerOnce direction="up">
               <img
-                src={imgtodiplay().img}
+                src={imgSrc}
                 alt={imgtodiplay().name}
-                className="w-full rounded-lg ring-black ring-4  ring-offset-4 shadow-2xl slide-up-animation grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2"
+                className={`w-full rounded-lg ring-black ring-4   ring-offset-4 shadow-2xl slide-up-animation grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2 ${
+                  change ? "opacity-0" : "opacity-100"
+                }`}
               />
             </Fade>
           </a>
         </div>
 
         {/* Right side */}
-        <div className="flex-1  bg-white [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] ">
+        <div className="flex-1 ">
           {/* <Fade cascade damping={0.1}> */}
           {/* onetap */}
 
@@ -361,12 +376,11 @@ const Projects = () => {
       </div>
       <hr />
       <Fade triggerOnce direction="up" delay={500} className="ml-auto">
-          <button className="w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out">
-        <a href="https://github.com/samarthkashyap-1" target="_blank">
-
-          See More
-        </a>
-          </button>
+        <button className="w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out">
+          <a href="https://github.com/samarthkashyap-1" target="_blank">
+            See More
+          </a>
+        </button>
       </Fade>
     </div>
   );
