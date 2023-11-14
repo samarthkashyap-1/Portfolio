@@ -8,13 +8,12 @@ import Skills from './components/Skills';
 import { scrollSpy } from 'react-scroll';
 import load from './assets/load.json'
 import Lottie from 'lottie-react'
-import { Fade } from 'react-awesome-reveal';
+
 
 
 function App() {
   const [loader, setloader] = useState(true)
-  const [loaded, setloaded] = useState(0)
-
+ 
 const handleScroll = () => {
   scrollSpy.update();
 }
@@ -40,7 +39,7 @@ useEffect(() => {
       {loader ? (
         <div className="fixed md:hidden top-0 left-0 right-0 bottom-0 bg-white z-50 flex justify-center items-center">
           <Lottie animationData={load} className="w-1/3" />
-          <h1>{}</h1>
+          
         </div>
       ) : (
         <>

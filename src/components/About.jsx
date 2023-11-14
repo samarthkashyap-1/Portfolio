@@ -1,11 +1,12 @@
 import React from 'react'
 import resume from '../assets/Samarthkashyap.pdf'
 import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-scroll';
 
 const About = () => {
   return (
     <div className="mx-auto h-screen px-20 flex flex-col gap-16">
-      <Fade triggerOnce cascade damping={0.4} direction='up' fraction={0.4}>
+      <Fade triggerOnce cascade damping={0.4} direction="up" fraction={0.4}>
         <div className="w-1/2">
           <h1 className="text-5xl font-semibold">Who am I?</h1>
           <h1 className="text-xl mt-6">
@@ -26,12 +27,14 @@ const About = () => {
       </Fade>
 
       <Fade triggerOnce direction="up" delay={1000} className="mx-auto mt-6 ">
-        <a
-          href={resume}
-          target="_blank"
-          className="px-10 py-4 text-xl transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit"
-        >
-          Resume
+        
+          <a
+            href={resume}
+            target="_blank"
+            className="px-10 py-4 text-xl transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit"
+          >
+            Resume
+          
         </a>
       </Fade>
     </div>

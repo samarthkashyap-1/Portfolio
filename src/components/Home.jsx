@@ -6,6 +6,7 @@ import github from "../assets/git.png";
 import x from "../assets/x.png";
 import insta from "../assets/insta.svg";
 import { Fade} from "react-awesome-reveal";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -68,9 +69,15 @@ const Home = () => {
               </Fade>
 
               <Fade triggerOnce direction="up" className="mx-auto" delay={300}>
-                <button className="px-10 py-4 text-xl mt-10  transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={1000}
+                  offset={-10}
+                
+                 className="px-10 py-4 text-xl mt-10  transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">
                   Let's Chat
-                </button>
+                </Link>
               </Fade>
             </div>
 

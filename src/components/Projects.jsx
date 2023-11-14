@@ -53,7 +53,7 @@ const Projects = () => {
      const foundElement = imageUrls.find((element) => element.name === activeSection);
 
   if (foundElement) {
-    console.log(foundElement);
+   
     return foundElement;
   }
     return imageUrls[0];
@@ -124,7 +124,7 @@ const Projects = () => {
                   Tap Away!{" "}
                 </h1>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>
@@ -188,7 +188,7 @@ const Projects = () => {
                   powerful features.
                 </h1>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>
@@ -235,9 +235,14 @@ const Projects = () => {
           <div
             ref={myref.feedback}
             id="feedback"
-            className=" h-screen  flex p-10 flex-col gap-12"
+            className=" h-screen flex p-10 flex-col gap-12"
           >
-            <Fade triggerOnce direction="up" fraction={1} className="h-screen flex">
+            <Fade
+              triggerOnce
+              direction="up"
+              fraction={1}
+              className="h-screen flex"
+            >
               <div>
                 <h1 className="text-5xl font-bold">Feedback App</h1>
                 <h1 className="text-xl mt-10">
@@ -249,7 +254,7 @@ const Projects = () => {
                   educational feedback is managed.{" "}
                 </h1>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>
@@ -299,7 +304,7 @@ const Projects = () => {
           <div
             ref={myref.chandrafarms}
             id="chandrafarms"
-            className=" h-screen  flex p-10 flex-col gap-12"
+            className=" h-screen flex p-10 flex-col gap-12"
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
@@ -310,7 +315,7 @@ const Projects = () => {
                   captivating design to intuitive navigation.
                 </h1>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-1 grid-cols-2 gap-8">
                 {/* Features Section */}
                 <div className="text-2xl font-semibold">
                   <h1>Features</h1>
