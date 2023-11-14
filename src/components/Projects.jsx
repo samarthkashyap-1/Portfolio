@@ -68,7 +68,7 @@ const Projects = () => {
     {
       name: "glog",
       img: img2,
-      link: "https://.glog.live",
+      link: "https://glog.live",
     },
     {
       name: "feedback",
@@ -291,7 +291,7 @@ const Projects = () => {
                 <a
                   target="_blank"
                   className="hover:underline"
-                  href="https://github.com/samarthkashyap-1/Onetap"
+                  href="https://github.com/samarthkashyap-1/Feedbackapp"
                 >
                   Github Repositary
                 </a>
@@ -361,13 +361,12 @@ const Projects = () => {
       </div>
       <hr />
       <Fade triggerOnce direction="up" delay={500} className="ml-auto">
-        <a
-          href="https://github.com/samarthkashyap-1"
-          target="_blank"
-          className="w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out"
-        >
+          <button className="w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out">
+        <a href="https://github.com/samarthkashyap-1" target="_blank">
+
           See More
         </a>
+          </button>
       </Fade>
     </div>
   );

@@ -27,15 +27,11 @@ const About = () => {
       </Fade>
 
       <Fade triggerOnce direction="up" delay={1000} className="mx-auto mt-6 ">
-        
-          <a
-            href={resume}
-            target="_blank"
-            className="px-10 py-4 text-xl transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit"
-          >
+        <button className="px-10 py-4 text-xl transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">
+          <a href={resume} target="_blank">
             Resume
-          
-        </a>
+          </a>
+        </button>
       </Fade>
     </div>
   );
