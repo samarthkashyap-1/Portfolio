@@ -172,7 +172,7 @@ const notify = () =>
             />
           </a>
 
-          <a href="https://www.twitter.com/samarthkashyap-0" target="_blank">
+          <a href="https://www.twitter.com/samarthkashyap0" target="_blank">
             <img
               src={x}
               alt="x"
