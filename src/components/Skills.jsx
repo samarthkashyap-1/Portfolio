@@ -108,40 +108,39 @@ const Skills = () => {
    
   ];
   return (
-    <div className="px-20 flex flex-col gap-20">
+    <div className="px-20 flex flex-col gap-20 md:px-6 md:my-36 ">
       <Fade triggerOnce direction="up">
-        <h1 className="text-6xl font-semibold">My Superpowers</h1>
+        <h1 className="text-6xl font-semibold md:text-5xl md:mt-36 ">My Super{" "}powers</h1>
       </Fade>
 
-      <Fade triggerOnce delay={500} cascade direction='up'> 
-      <Marquee
-        pauseOnHover
-        autoFill
-        speed={60}
-        delay={1.2}
-        
-        gradient
-        gradientColor="white"
-        gradientWidth={200}
-        style={{
-         marginTop: "4rem",
-        }}
-      >
-        <div className="flex gap-20">
-          {skills.map((skill) => (
-            <Fade triggerOnce cascade fraction={0.4}>
-              <div className="flex flex-col items-center gap-5">
-                <img
-                  src={skill?.img}
-                  alt={skill?.name}
-                  className="w-36 grayscale hover:grayscale-0 hover:-translate-y-1 transition-all duration-500 ease-in-out "
-                />
-                <h1 className="text-xl font-semibold">{skill?.name}</h1>
-              </div>
-            </Fade>
-          ))}
-        </div>
-      </Marquee>
+      <Fade triggerOnce delay={500} cascade direction="up">
+        <Marquee
+          pauseOnHover
+          autoFill
+          speed={60}
+          delay={1.2}
+          gradient
+          gradientColor="white"
+          gradientWidth={80}
+          style={{
+            marginTop: "4rem",
+          }}
+        >
+          <div className="flex gap-20">
+            {skills.map((skill) => (
+              <Fade triggerOnce cascade fraction={0.4}>
+                <div className="flex flex-col group items-center gap-5">
+                  <img
+                    src={skill?.img}
+                    alt={skill?.name}
+                    className="w-36 grayscale group-hover:grayscale-0 group-hover:-translate-y-1 transition-all duration-500 ease-in-out aspect-square md:w-28 "
+                  />
+                  <h1 className="text-xl font-semibold">{skill?.name}</h1>
+                </div>
+              </Fade>
+            ))}
+          </div>
+        </Marquee>
       </Fade>
     </div>
   );

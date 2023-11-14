@@ -30,20 +30,14 @@ useEffect(() => {
 
   return (
     <>
-      <div className="hidden md:block ">
-        <div className="fixed flex-col top-0 left-0 right-0 bottom-0 bg-white z-50 flex justify-center items-center">
-          <Lottie animationData={load} className="w-1/3" />
-          <h1 className='text-xl'>Under Construction for Mobile/Tablets</h1>
-        </div>
-      </div>
       {loader ? (
-        <div className="fixed md:hidden top-0 left-0 right-0 bottom-0 bg-white z-50 flex justify-center items-center">
-          <Lottie animationData={load} className="w-1/3" />
+        <div className="fixed top-0 left-0 right-0 bottom-0 bg-white z-50 flex justify-center items-center">
+          <Lottie animationData={load} className="w-1/3 md:w-1/2" />
           
         </div>
       ) : (
         <>
-          <div className="md:hidden">
+          <div className="">
             <Navbar />
             <div name="home">
               <Home />

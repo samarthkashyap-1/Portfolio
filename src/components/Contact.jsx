@@ -59,13 +59,13 @@ const notify = () =>
 
   
   return (
-    <div className="px-20 my-10 ">
+    <div className="px-20 my-10 md:px-6">
       <ToastContainer />
       <Fade triggerOnce direction="up" fraction={0.6}>
-        <h1 className="text-6xl font-semibold mb-10">Let's Connect!</h1>
+        <h1 className="text-6xl font-semibold mb-10 md:text-5xl">Let's Connect!</h1>
       </Fade>
-      <div className="flex ">
-        <div className="flex flex-1 flex-col gap-12">
+      <div className="flex md:flex-col ">
+        <div className="flex flex-1 flex-col gap-12 md:gap-6">
           <Fade triggerOnce direction="up">
             <h1 className="text-xl">
               Got a project in mind or just want to geek out about coding? I'm
@@ -135,7 +135,7 @@ const notify = () =>
         </div>
       </div>
 
-      <div className="flex gap-5 justify-center">
+      <div className="flex gap-5 justify-center md:mt-10">
         <Fade cascade damping={0.2} triggerOnce delay={400} direction="up">
           <a
             href="

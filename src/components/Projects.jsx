@@ -97,13 +97,15 @@ const Projects = () => {
 
 
   return (
-    <div className=" p-20 flex flex-col gap-10 mt-20">
+    <div className=" p-20 flex flex-col gap-10 mt-20 md:p-6">
       <Fade triggerOnce direction="up">
-        <h1 className="text-6xl font-semibold h-fit">Here's my Garage</h1>
+        <h1 className="text-6xl font-semibold h-fit md:text-5xl">
+          Here's my Garage
+        </h1>
       </Fade>
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen md:flex-col">
         {/* Left side */}
-        <div className="flex-1 h-screen flex py-10 px-2 sticky top-0 flex-col">
+        <div className="flex-1 h-screen flex py-10 px-2 sticky z-10 top-0 flex-col">
           {/* Display the image based on the current scroll position */}
 
           <a target="_blank" href={imgtodiplay().link} className="my-auto ">
@@ -111,7 +113,7 @@ const Projects = () => {
               <img
                 src={imgSrc}
                 alt={imgtodiplay().name}
-                className={`w-full rounded-lg ring-black ring-4   ring-offset-4 shadow-2xl slide-up-animation grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2 ${
+                className={`w-full rounded-lg ring-black ring-4 md:ring-2 md:h-44  ring-offset-4 shadow-2xl grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2 ${
                   change ? "opacity-0" : "opacity-100"
                 }`}
               />
@@ -120,18 +122,18 @@ const Projects = () => {
         </div>
 
         {/* Right side */}
-        <div className="flex-1 ">
+        <div className="flex-1 flex flex-col md:gap-20 ">
           {/* <Fade cascade damping={0.1}> */}
           {/* onetap */}
 
           <div
             ref={myref.onetap}
             id="onetap"
-            className=" h-screen flex p-10 flex-col gap-12"
+            className=" h-screen flex p-10 flex-col gap-12 md:gap-6 md:p-0 md:mb-36 md:mt-10"
           >
-            <Fade triggerOnce direction="up" className="h-screen flex">
+            <Fade triggerOnce direction="up" className="h-screen flex ">
               <div>
-                <h1 className="text-5xl font-bold">Onetap</h1>
+                <h1 className="text-5xl font-bold md:text-3xl">Onetap</h1>
                 <h1 className="text-xl mt-10">
                   Onetap - the one-stop solution for creating a personalized
                   landing page for all your important links. With Onetap,
@@ -181,19 +183,19 @@ const Projects = () => {
                 </a>
               </div>
             </Fade>
+            <hr />
           </div>
 
-          <hr />
           {/* Glog */}
 
           <div
             ref={myref.glog}
             id="glog"
-            className=" h-screen flex p-10 flex-col gap-12"
+            className=" h-screen flex p-10 flex-col gap-12 md:gap-6 md:p-0 md:mb-36 md:mt-10"
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
-                <h1 className="text-5xl font-bold">Glog</h1>
+                <h1 className="text-5xl font-bold md:text-3xl">Glog</h1>
                 <h1 className="text-xl mt-10">
                   Embark on a journey of expression and creativity with Glog, a
                   full-stack blog website meticulously crafted using React,
@@ -243,14 +245,14 @@ const Projects = () => {
                 </a>
               </div>
             </Fade>
+            <hr />
           </div>
-          <hr />
           {/* Feedback app */}
 
           <div
             ref={myref.feedback}
             id="feedback"
-            className=" h-screen flex p-10 flex-col gap-12"
+            className=" h-screen flex p-10 flex-col gap-12 md:gap-6 md:p-0 md:mb-36 mt-36"
           >
             <Fade
               triggerOnce
@@ -259,7 +261,7 @@ const Projects = () => {
               className="h-screen flex"
             >
               <div>
-                <h1 className="text-5xl font-bold">Feedback App</h1>
+                <h1 className="text-5xl font-bold md:text-3xl">Feedback App</h1>
                 <h1 className="text-xl mt-10">
                   In the dynamic landscape of education and continuous
                   improvement, the Feedback App stands as a testament to
@@ -312,18 +314,20 @@ const Projects = () => {
                 </a>
               </div>
             </Fade>
+            <hr />
           </div>
-          <hr />
           {/* chandrfarms */}
 
           <div
             ref={myref.chandrafarms}
             id="chandrafarms"
-            className=" h-screen flex p-10 flex-col gap-12"
+            className=" h-screen flex p-10 flex-col gap-12 md:gap-8 md:p-0 md:mb-36 md:mt-52"
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
-                <h1 className="text-5xl font-bold">Chandra Farms</h1>
+                <h1 className="text-5xl font-bold md:text-3xl">
+                  Chandra Farms
+                </h1>
                 <h1 className="text-xl mt-10">
                   I orchestrated a seamless online experience for couples
                   seeking the perfect backdrop for their special day. From
@@ -373,8 +377,8 @@ const Projects = () => {
           </div>
           {/* </Fade> */}
         </div>
+        <hr />
       </div>
-      <hr />
       <Fade triggerOnce direction="up" delay={500} className="ml-auto">
         <button className="w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out">
           <a href="https://github.com/samarthkashyap-1" target="_blank">
