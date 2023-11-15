@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <div className="mx-auto h-screen px-20 sm:px-10 ">
         <div className="flex gap-5  justify-end mt-2 sm:justify-center">
-          <Fade cascade damping={0.2} triggerOnce delay={1000} direction="down">
+          <Fade cascade damping={0.2} triggerOnce delay={800} direction="down">
             <a
               href="
             https://www.linkedin.com/in/samarth-kashyap-2b1b3a1b2/"
@@ -94,8 +94,11 @@ const Home = () => {
             </div>
 
             <div className="flex-1 sm:hidden">
+
               <Fade direction="up" triggerOnce delay={300}>
+              
                 <Lottie animationData={anima} className="md:w-[75%] mx-auto" />
+              
               </Fade>
             </div>
           </div>

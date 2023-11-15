@@ -29,7 +29,8 @@ const About = () => {
       <Fade
         triggerOnce
         direction="up"
-        delay={1000}
+        delay={800}
+        fraction={0.8}
         className="mx-auto mt-6 sm:mt-0"
       >
         <button className="px-10 py-4  text-xl transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">

@@ -38,7 +38,9 @@ useEffect(() => {
       ) : (
         <>
           <div className="">
+        
             <Navbar />
+
             <div name="home">
               <Home />
             </div>

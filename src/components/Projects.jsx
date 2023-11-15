@@ -84,12 +84,18 @@ const Projects = () => {
 
 
     useEffect(() => {
-      
+        // preloading the image
+      const img = new Image();
+      img.src = imgtodiplay().img;
+
+
+       
+
       
       setchange(true);
       setTimeout(() => {
-        setImgSrc(imgtodiplay().img);
         setchange(false);
+        setImgSrc(imgtodiplay().img);
       }, 400);
 
 
@@ -98,7 +104,7 @@ const Projects = () => {
 
   return (
     <div className=" p-20 flex flex-col gap-10 mt-20 sm:p-10">
-      <Fade triggerOnce direction="up">
+      <Fade triggerOnce direction="up" fraction={0.8}>
         <h1 className="text-6xl font-semibold h-fit sm:text-5xl">
           Here's my Garage
         </h1>
@@ -113,8 +119,8 @@ const Projects = () => {
               <img
                 src={imgSrc}
                 alt={imgtodiplay().name}
-                className={`w-full rounded-lg ring-black ring-4 sm:ring-2 sm:h-44  ring-offset-4 shadow-2xl grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2 ${
-                  change ? "opacity-0" : "opacity-100"
+                className={`w-full rounded-lg ring-black ring-4 h-fit sm:ring-2 sm:h-44  ring-offset-4 shadow-2xl grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:-translate-y-2 ${
+                  change ? " opacity-0" : "opacity-100"
                 }`}
               />
             </Fade>
@@ -257,7 +263,7 @@ const Projects = () => {
             <Fade
               triggerOnce
               direction="up"
-              fraction={1}
+              // fraction={1}
               className="h-screen flex"
             >
               <div>

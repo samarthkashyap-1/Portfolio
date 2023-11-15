@@ -62,7 +62,9 @@ const notify = () =>
     <div className="px-20 my-10 sm:px-10">
       <ToastContainer />
       <Fade triggerOnce direction="up" fraction={0.6}>
-        <h1 className="text-6xl font-semibold mb-10 sm:text-5xl">Let's Connect!</h1>
+        <h1 className="text-6xl font-semibold mb-10 sm:text-5xl">
+          Let's Connect!
+        </h1>
       </Fade>
       <div className="flex sm:flex-col ">
         <div className="flex flex-1 flex-col gap-12 sm:gap-6">
@@ -87,7 +89,7 @@ const notify = () =>
               <div className="flex flex-col gap-5">
                 <Fade triggerOnce direction="up">
                   <input
-                  required
+                    required
                     type="text"
                     value={name}
                     placeholder="Name"
@@ -122,15 +124,17 @@ const notify = () =>
                 <Fade
                   triggerOnce
                   direction="up"
-                  delay={300}
+                  delay={200}
                   className="ml-auto"
                 >
                   <input
                     type="submit"
                     value="Peww!"
-                    className="px-10 py-4 text-xl transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit" disabled={submit}
+                    className={`px-10 py-4 ${
+                      submit ? "cursor-wait" : "cursor-pointer"
+                    } text-xl transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit`}
+                    disabled={submit}
                   />
-                  
                 </Fade>
               </div>
             </form>
@@ -139,7 +143,7 @@ const notify = () =>
       </div>
 
       <div className="flex gap-5 justify-center sm:mt-10">
-        <Fade cascade damping={0.2} triggerOnce delay={400} direction="up">
+        <Fade cascade damping={0.2} triggerOnce delay={200} direction="up">
           <a
             href="
             https://www.linkedin.com/in/samarth-kashyap-2b1b3a1b2/"
@@ -184,7 +188,6 @@ const notify = () =>
           </a>
         </Fade>
       </div>
-    
     </div>
   );
 }
