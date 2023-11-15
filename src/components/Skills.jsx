@@ -138,7 +138,7 @@ const Skills = () => {
                     alt={skill?.name}
                     className="w-36 grayscale group-hover:grayscale-0 group-hover:-translate-y-1 transition-all duration-300 ease-in-out aspect-square sm:w-28 "
                   />
-                  <h1 className="text-xl font-semibold">{skill?.name}</h1>
+                  <h1 className={`text-xl font-semibold ${theme?"invert":"invert-0"}`}>{skill?.name}</h1>
                 </div>
               </Fade>
             ))}

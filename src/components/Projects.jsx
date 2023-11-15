@@ -108,7 +108,11 @@ const Projects = () => {
   return (
     <div className=" p-20 flex flex-col gap-10 mt-20 sm:p-10">
       <Fade triggerOnce direction="up" fraction={0.8}>
-        <h1 className={`text-6xl font-semibold h-fit sm:text-5xl ${theme? "invert":"invert-0"}`}>
+        <h1
+          className={`text-6xl font-semibold h-fit sm:text-5xl ${
+            theme ? "invert" : "invert-0"
+          }`}
+        >
           Here's my Garage
         </h1>
       </Fade>
@@ -136,13 +140,13 @@ const Projects = () => {
             theme ? "invert" : "invert-0"
           } `}
         >
-          {/* <Fade cascade damping={0.1}> */}
+          
           {/* onetap */}
 
           <div
             ref={myref.onetap}
             id="onetap"
-            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-16 sm:mt-10"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-16 sm:mt-5"
           >
             <Fade triggerOnce direction="up" className="h-screen flex ">
               <div>
@@ -196,15 +200,15 @@ const Projects = () => {
                 </a>
               </div>
             </Fade>
-            <hr />
           </div>
+            <hr className="border-black mx-10 sm:mx-0" />
 
           {/* Glog */}
 
           <div
             ref={myref.glog}
             id="glog"
-            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-20 "
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-32 "
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
@@ -258,14 +262,14 @@ const Projects = () => {
                 </a>
               </div>
             </Fade>
-            <hr />
           </div>
+             <hr className="border-black mx-10 sm:mx-0" />
           {/* Feedback app */}
 
           <div
             ref={myref.feedback}
             id="feedback"
-            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-20 mt-10"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-56 "
           >
             <Fade
               triggerOnce
@@ -327,14 +331,14 @@ const Projects = () => {
                 </a>
               </div>
             </Fade>
-            <hr />
           </div>
+             <hr className="border-black mx-10 sm:mx-0" />
           {/* chandrfarms */}
 
           <div
             ref={myref.chandrafarms}
             id="chandrafarms"
-            className=" h-screen flex p-10 flex-col gap-12 sm:gap-8 sm:p-0 mb-10 sm:mt-44"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-8 sm:p-0 "
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
@@ -388,12 +392,15 @@ const Projects = () => {
               </div>
             </Fade>
           </div>
-          {/* </Fade> */}
+         <hr className="border-black mx-10 sm:mx-0" />
+          
         </div>
-        <hr />
+
       </div>
       <Fade triggerOnce direction="up" delay={500} className="ml-auto">
-        <button className="w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out">
+        <button
+          className={`w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out ${theme?"invert":"invert-0"}`}
+        >
           <a href="https://github.com/samarthkashyap-1" target="_blank">
             See More
           </a>

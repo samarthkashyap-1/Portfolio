@@ -16,7 +16,7 @@ import light from './assets/light.png'
 
 function App() {
   const [loader, setloader] = useState(true)
-  const [theme, setTheme] = useState(false)
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ? JSON.parse(localStorage.getItem("theme")) : false)
  
 const handleScroll = () => {
   scrollSpy.update();
@@ -38,14 +38,15 @@ useEffect(() => {
 }
 , [])
 useEffect(() => {
-   if(!localStorage.getItem("theme") ||theme!=JSON.parse(localStorage.getItem("theme"))){
-    localStorage.setItem("theme", JSON.stringify(theme));
-  }else{
-    setTheme(JSON.parse(localStorage.getItem("theme")));
-  }
-  console.log(localStorage.getItem("theme"));
+   if (
+     !localStorage.getItem("theme") ||
+     theme != JSON.parse(localStorage.getItem("theme"))
+   ) {
+     localStorage.setItem("theme", JSON.stringify(theme));}
+
 }
 , [theme])
+
 
 
   return (
@@ -69,7 +70,7 @@ useEffect(() => {
                 onClick={() => {
                   setTheme(!theme);
                 }}
-                className="absolute  w-16 left-20 z-50 transition-all duration-300 ease-in-out cursor-pointer sm:left-5 sm:w-12 top-0"
+                className="absolute w-20 left-20 z-50 transition-all duration-300 ease-in-out cursor-pointer sm:left-10 sm:w-12 top-0"
               >
                 {theme ? (
                   <img src={night} alt="" className="invert" />

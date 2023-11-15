@@ -28,7 +28,7 @@ const Home = () => {
               <img
                 src={link}
                 alt="link"
-                className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+                className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
               />
             </a>
             <a
@@ -39,7 +39,7 @@ const Home = () => {
               <img
                 src={insta}
                 alt="insta"
-                className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+                className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
               />
             </a>
             <a
@@ -51,7 +51,7 @@ const Home = () => {
               <img
                 src={github}
                 alt="github"
-                className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+                className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
               />
             </a>
 
@@ -59,7 +59,7 @@ const Home = () => {
               <img
                 src={x}
                 alt="x"
-                className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+                className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
               />
             </a>
           </Fade>

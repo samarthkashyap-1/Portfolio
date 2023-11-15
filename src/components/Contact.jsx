@@ -93,7 +93,7 @@ const notify = () =>
             </h1>
           </Fade>
           <Fade triggerOnce direction="up">
-            <Lottie animationData={contact} className="w-1/2 mx-auto" />
+            <Lottie animationData={contact} className="w-1/2 mx-auto brightness-125" />
           </Fade>
         </div>
         <div className={`flex-1 ${theme ? "invert" : "invert-0"}`}>
@@ -169,7 +169,7 @@ const notify = () =>
             <img
               src={link}
               alt="link"
-              className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+              className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
             />
           </a>
           <a
@@ -180,7 +180,7 @@ const notify = () =>
             <img
               src={insta}
               alt="insta"
-              className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+              className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
             />
           </a>
           <a
@@ -192,7 +192,7 @@ const notify = () =>
             <img
               src={github}
               alt="github"
-              className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+              className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
             />
           </a>
 
@@ -200,7 +200,7 @@ const notify = () =>
             <img
               src={x}
               alt="x"
-              className="w-7 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
+              className="sm:w-7 w-9 aspect-square hover:-translate-y-1 transition-all duration-300 ease-in-out"
             />
           </a>
         </Fade>

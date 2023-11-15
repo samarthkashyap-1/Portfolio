@@ -1,9 +1,9 @@
 import React from 'react'
-import home from '../assets/home.svg'
+import home from '../assets/home.png'
 import about from '../assets/about.svg'
-import contact from '../assets/contact.png'
+import contact from '../assets/contact2.png'
 import skill from '../assets/skills2.png'
-import projects from '../assets/projects.png'
+import projects from '../assets/projects3.png'
 import { Tooltip } from 'antd'
 import { useState, useEffect } from "react";
 import { Context } from './Context'
@@ -44,14 +44,14 @@ const Navbar = () => {
         visible ? "translate-y-0" : "translate-y-56 "
       } transition-all duration-700 ease-in-out}`}
     >
-      <ul className="flex gap-10 sm:gap-5 bg-white w-fit border-2 border-black px-7 py-3 rounded-lg  justify-center drop-shadow-2xl sm:p-3">
+      <ul className="flex gap-8 sm:gap-5 bg-white w-fit border-2 border-black px-7 py-2 rounded-lg  justify-center drop-shadow-2xl sm:p-3">
         <li className="group cursor-pointer">
           <Tooltip title="Home" color={`${theme ? "gray" : "black"}`}>
             <Link to="home" smooth={true} duration={1000} offset={-10}>
               <img
                 src={home}
                 alt="home"
-                className={`w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl`}
+                className={`w-12  sm:w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl`}
               />
             </Link>
           </Tooltip>
@@ -62,7 +62,7 @@ const Navbar = () => {
               <img
                 src={about}
                 alt="about"
-                className="w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
+                className="w-12  sm:w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
               />
             </Link>
           </Tooltip>
@@ -73,7 +73,7 @@ const Navbar = () => {
               <img
                 src={skill}
                 alt="skills"
-                className="w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
+                className="w-12  sm:w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
               />
             </Link>
           </Tooltip>
@@ -84,7 +84,7 @@ const Navbar = () => {
               <img
                 src={projects}
                 alt="projects"
-                className="w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
+                className="w-12  sm:w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
               />
             </Link>
           </Tooltip>
@@ -95,7 +95,7 @@ const Navbar = () => {
               <img
                 src={contact}
                 alt="contactme"
-                className="w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
+                className="w-12  sm:w-10 aspect-square group-hover:-translate-y-2 transition-all duration-300 ease-in-out hover:drop-shadow-2xl"
               />
             </Link>
           </Tooltip>
