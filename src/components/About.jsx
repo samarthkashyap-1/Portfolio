@@ -1,11 +1,18 @@
 import React from 'react'
-import resume from '../assets/Samarthkashyap.pdf'
+import resume from '../assets/Samarth Kashyap.pdf'
 import { Fade } from 'react-awesome-reveal';
 import { Link } from 'react-scroll';
+import { Context } from './Context';
+
 
 const About = () => {
+  const { theme } = React.useContext(Context);
   return (
-    <div className="mx-auto h-screen px-20 flex flex-col gap-16 sm:px-10 md:mt-20 ">
+    <div
+      className={`mx-auto h-screen px-20 flex flex-col gap-16 sm:px-10 md:mt-20 transition-all duration-700 ease-in-out ${
+        theme ? "invert" : " invert-0"
+      }`}
+    >
       <Fade triggerOnce cascade damping={0.4} direction="up" fraction={0.4}>
         <div className="w-1/2 md:w-full">
           <h1 className="text-5xl font-semibold">Who am I?</h1>
@@ -29,7 +36,7 @@ const About = () => {
       <Fade
         triggerOnce
         direction="up"
-        delay={800}
+        delay={1e3}
         fraction={0.8}
         className="mx-auto mt-6 sm:mt-0"
       >

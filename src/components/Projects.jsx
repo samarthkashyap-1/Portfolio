@@ -4,9 +4,11 @@ import img2 from "../assets/Glog.png";
 import img3 from "../assets/Feedback app.png";
 import img4 from "../assets/Chandrafarms.png";
 import { Fade } from "react-awesome-reveal";
+import { Context } from "./Context";
 
 
 const Projects = () => {
+  const { theme } = React.useContext(Context);
 
     const imageUrls = [
       { name: "onetap", img: img, link: "https://onetap-jet.vercel.app/" },
@@ -87,6 +89,7 @@ const Projects = () => {
         // preloading the image
       const img = new Image();
       img.src = imgtodiplay().img;
+      
 
 
        
@@ -105,7 +108,7 @@ const Projects = () => {
   return (
     <div className=" p-20 flex flex-col gap-10 mt-20 sm:p-10">
       <Fade triggerOnce direction="up" fraction={0.8}>
-        <h1 className="text-6xl font-semibold h-fit sm:text-5xl">
+        <h1 className={`text-6xl font-semibold h-fit sm:text-5xl ${theme? "invert":"invert-0"}`}>
           Here's my Garage
         </h1>
       </Fade>
@@ -128,7 +131,11 @@ const Projects = () => {
         </div>
 
         {/* Right side */}
-        <div className="flex-1 flex flex-col sm:gap-20 ">
+        <div
+          className={`flex-1 flex flex-col sm:gap-20 transition-all duration-700 ease-in-out  ${
+            theme ? "invert" : "invert-0"
+          } `}
+        >
           {/* <Fade cascade damping={0.1}> */}
           {/* onetap */}
 

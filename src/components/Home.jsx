@@ -7,16 +7,22 @@ import x from "../assets/x.png";
 import insta from "../assets/insta.svg";
 import { Fade} from "react-awesome-reveal";
 import { Link } from "react-scroll";
+import { Context } from "./Context";
 
 const Home = () => {
+  const { theme } = React.useContext(Context);
   return (
     <div>
-      <div className="mx-auto h-screen px-20 sm:px-10 ">
+      <div
+        className={`mx-auto h-screen px-20 sm:px-10 transition-all duration-700 ease-in-out ${
+          theme ? "invert" : "invert-0"
+        } `}
+      >
         <div className="flex gap-5  justify-end mt-2 sm:justify-center">
           <Fade cascade damping={0.2} triggerOnce delay={800} direction="down">
             <a
               href="
-            https://www.linkedin.com/in/samarth-kashyap-2b1b3a1b2/"
+            https://www.linkedin.com/in/samarth-kash/"
               target="_blank"
             >
               <img
@@ -62,7 +68,9 @@ const Home = () => {
           <div className="flex sm:flex-col md:flex-col md:mt-10 ">
             <div className="w-1/2 h-full md:w-full flex justify-center align-middle my-auto flex-col gap-6 sm:mt-10">
               <Fade triggerOnce direction="down">
-                <h1 className="text-8xl font-extrabold sm:text-6xl">Hey there,</h1>
+                <h1 className="text-8xl font-extrabold sm:text-6xl">
+                  Hey there,
+                </h1>
               </Fade>
               <Fade triggerOnce delay={200}>
                 <h1 className="text-xl leading-loose sm:leading-relaxed ">
@@ -93,12 +101,12 @@ const Home = () => {
               </Fade>
             </div>
 
-            <div className="flex-1 sm:hidden">
-
+            <div className="flex-1 sm:hidden ">
               <Fade direction="up" triggerOnce delay={300}>
-              
-                <Lottie animationData={anima} className="md:w-[75%] mx-auto" />
-              
+                <Lottie
+                  animationData={anima}
+                  className="md:w-[75%] mx-auto invert"
+                />
               </Fade>
             </div>
           </div>

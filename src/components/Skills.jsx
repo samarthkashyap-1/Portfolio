@@ -17,9 +17,11 @@ import pug from "../assets/pug.svg";
 import vs from "../assets/vs.svg";
 import boot from "../assets/boot.svg";
 import express from "../assets/express.svg";
+import { Context } from './Context';
 
 
 const Skills = () => {
+  const { theme } = React.useContext(Context);
 
   const skills = [
     {
@@ -105,7 +107,13 @@ const Skills = () => {
   return (
     <div className="px-20 flex flex-col gap-20 sm:px-10 sm:my-28  ">
       <Fade triggerOnce direction="up" fraction={0.8}>
-        <h1 className="text-6xl font-semibold sm:text-5xl sm:mt-28  ">My Super{" "}Powers</h1>
+        <h1
+          className={`text-6xl font-semibold sm:text-5xl sm:mt-28  ${
+            theme ? "invert" : "invert-0"
+          } transition-all duration-700 ease-in-out`}
+        >
+          My Super Powers
+        </h1>
       </Fade>
 
       <Fade triggerOnce delay={500} cascade direction="up">
@@ -115,7 +123,7 @@ const Skills = () => {
           speed={60}
           delay={1.2}
           gradient
-          gradientColor="white"
+          gradientColor={`${theme ? "#000" : "#fff"}`}
           gradientWidth={80}
           style={{
             marginTop: "4rem",
