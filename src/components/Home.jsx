@@ -68,7 +68,7 @@ const Home = () => {
           <div className="flex sm:flex-col md:flex-col md:mt-10 ">
             <div className="w-1/2 h-full md:w-full flex justify-center align-middle my-auto flex-col gap-6 sm:mt-10">
               <Fade triggerOnce direction="down">
-                <h1 className="text-8xl font-extrabold sm:text-6xl">
+                <h1 className="text-8xl font-extrabold sm:text-7xl">
                   Hey there,
                 </h1>
               </Fade>
