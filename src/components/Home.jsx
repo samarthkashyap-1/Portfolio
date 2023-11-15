@@ -94,7 +94,7 @@ const Home = () => {
 
               <Fade triggerOnce direction="up" className="mx-auto" delay={300}>
                 <Link to="contact" smooth={true} duration={1000} offset={-10}>
-                  <button className="px-10 py-4 text-xl mt-10 sm:mt-2 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">
+                  <button className="px-10 py-4 text-xl mt-10 sm:mt-10 cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-2 mx-auto border-2 rounded-lg border-black font-semibold w-fit">
                     Let's Chat
                   </button>
                 </Link>

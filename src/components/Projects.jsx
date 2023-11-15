@@ -146,7 +146,7 @@ const Projects = () => {
           <div
             ref={myref.onetap}
             id="onetap"
-            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-16 sm:mt-5"
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-10 sm:mt-5"
           >
             <Fade triggerOnce direction="up" className="h-screen flex ">
               <div>
@@ -208,7 +208,7 @@ const Projects = () => {
           <div
             ref={myref.glog}
             id="glog"
-            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-32 "
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-10 "
           >
             <Fade triggerOnce direction="up" className="h-screen flex">
               <div>
@@ -269,7 +269,7 @@ const Projects = () => {
           <div
             ref={myref.feedback}
             id="feedback"
-            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-56 "
+            className=" h-screen flex p-10 flex-col gap-12 sm:gap-6 sm:p-0 sm:mb-12 "
           >
             <Fade
               triggerOnce

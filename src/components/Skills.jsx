@@ -105,7 +105,7 @@ const Skills = () => {
     }
   ];
   return (
-    <div className="px-20 flex flex-col gap-20 sm:px-10 sm:my-28  ">
+    <div className="px-20 flex flex-col gap-20 sm:px-10 sm:mb-28  ">
       <Fade triggerOnce direction="up" fraction={0.8}>
         <h1
           className={`text-6xl font-semibold sm:text-5xl sm:mt-28  ${
