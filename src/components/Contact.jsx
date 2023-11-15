@@ -87,6 +87,7 @@ const notify = () =>
               <div className="flex flex-col gap-5">
                 <Fade triggerOnce direction="up">
                   <input
+                  required
                     type="text"
                     value={name}
                     placeholder="Name"
@@ -97,6 +98,7 @@ const notify = () =>
                 <Fade triggerOnce direction="up">
                   <input
                     value={email}
+                    required
                     type="email"
                     placeholder="Email"
                     onChange={(e) => setEmail(e.target.value)}
@@ -107,6 +109,7 @@ const notify = () =>
                 <Fade triggerOnce direction="up">
                   <textarea
                     value={message}
+                    required
                     name=""
                     id=""
                     cols="30"

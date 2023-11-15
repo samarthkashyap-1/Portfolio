@@ -23,7 +23,6 @@ const Skills = () => {
 
   const skills = [
     {
-        
         name: "Bootstrap",
         img: boot,
     },
@@ -101,11 +100,7 @@ const Skills = () => {
 
       name: "VS Code",
       img: vs,
-    },
-    {
-      
     }
-   
   ];
   return (
     <div className="px-20 flex flex-col gap-20 sm:px-10 sm:my-28  ">
