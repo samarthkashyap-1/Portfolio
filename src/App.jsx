@@ -12,6 +12,7 @@ import { Context } from './components/Context';
 import { Switch } from 'antd';
 import night from './assets/night.png'
 import light from './assets/light.png'
+import { Fade } from 'react-awesome-reveal';
 
 
 function App() {
@@ -66,18 +67,25 @@ useEffect(() => {
         ) : (
           <>
             <div className={` transition-all duration-300 ease-in-out`}>
-              <div
-                onClick={() => {
-                  setTheme(!theme);
-                }}
+              <Fade
+                direction="down"
+                delay={500}
+                triggerOnce
                 className="absolute w-20 left-20 z-50 transition-all duration-300 ease-in-out cursor-pointer sm:left-10 sm:w-12 top-0"
               >
-                {theme ? (
-                  <img src={night} alt="" className="invert" />
-                ) : (
-                  <img src={light} alt="" />
-                )}
-              </div>
+                <div
+                  onClick={() => {
+                    setTheme(!theme);
+                  }}
+                  className="hover:-translate-y-1 transition-all duration-300 ease-in-out"
+                >
+                  {theme ? (
+                    <img src={night} alt="" className="invert" />
+                  ) : (
+                    <img src={light} alt="" />
+                  )}
+                </div>
+              </Fade>
 
               <Navbar />
 
