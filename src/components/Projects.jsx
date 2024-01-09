@@ -309,7 +309,7 @@ const Projects = () => {
                     <li>AG Grid</li>
                     <li>Node.js</li>
                     <li>Express</li>
-                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
                   </ul>
                 </div>
               </div>
