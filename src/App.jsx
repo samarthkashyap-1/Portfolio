@@ -18,7 +18,7 @@ import Offline from './components/Offline';
 
 function App() {
   const [isOnline , setisOnline] = useState(navigator.onLine)
-  const [loader, setloader] = useState(false)
+  const [loader, setloader] = useState(true)
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? JSON.parse(localStorage.getItem("theme")) : false)
  
 const handleScroll = () => {
