@@ -20,7 +20,7 @@ const Projects = () => {
       {
         name: "feedback",
         img: img3,
-        link: "https://feedbackapp-r78n-samarthkashyap-1.vercel.app/",
+        link: "https://feedbackapp-chi.vercel.app/",
       },
       {
         name: "chandrafarms",
@@ -140,7 +140,6 @@ const Projects = () => {
             theme ? "invert" : "invert-0"
           } `}
         >
-          
           {/* onetap */}
 
           <div
@@ -201,7 +200,7 @@ const Projects = () => {
               </div>
             </Fade>
           </div>
-            <hr className="border-black mx-10 sm:mx-0" />
+          <hr className="border-black mx-10 sm:mx-0" />
 
           {/* Glog */}
 
@@ -263,7 +262,7 @@ const Projects = () => {
               </div>
             </Fade>
           </div>
-             <hr className="border-black mx-10 sm:mx-0" />
+          <hr className="border-black mx-10 sm:mx-0" />
           {/* Feedback app */}
 
           <div
@@ -318,7 +317,7 @@ const Projects = () => {
                 <a
                   target="_blank"
                   className="hover:underline"
-                  href="https://onetap-jet.vercel.app/"
+                  href="https://feedbackapp-chi.vercel.app/"
                 >
                   Live
                 </a>
@@ -332,7 +331,7 @@ const Projects = () => {
               </div>
             </Fade>
           </div>
-             <hr className="border-black mx-10 sm:mx-0" />
+          <hr className="border-black mx-10 sm:mx-0" />
           {/* chandrfarms */}
 
           <div
@@ -369,7 +368,7 @@ const Projects = () => {
                   <ul className="mt-6 text-lg list-disc">
                     <li>React</li>
                     <li>Tailwind CSS</li>
-                    <li>Google Sheet</li>
+                    <li>Firebase</li>
                   </ul>
                 </div>
               </div>
@@ -392,14 +391,14 @@ const Projects = () => {
               </div>
             </Fade>
           </div>
-         <hr className="border-black mx-10 sm:mx-0" />
-          
+          <hr className="border-black mx-10 sm:mx-0" />
         </div>
-
       </div>
       <Fade triggerOnce direction="up" delay={500} className="ml-auto">
         <button
-          className={`w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out ${theme?"invert":"invert-0"}`}
+          className={`w-fit px-10 py-3 border-2 border-black text-xl font-semibold rounded-lg ml-auto hover:-translate-y-2 transition-all duration-300 ease-in-out ${
+            theme ? "invert" : "invert-0"
+          }`}
         >
           <a href="https://github.com/samarthkashyap-1" target="_blank">
             See More
