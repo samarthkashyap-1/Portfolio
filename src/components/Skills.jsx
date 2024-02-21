@@ -120,7 +120,7 @@ const Skills = () => {
         <Marquee
           pauseOnHover
           autoFill
-          speed={60}
+          speed={250}
           delay={1.2}
           gradient
           gradientColor={`${theme ? "#000" : "#fff"}`}
