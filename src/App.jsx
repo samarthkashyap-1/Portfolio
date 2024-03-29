@@ -14,7 +14,8 @@ import night from './assets/night.png'
 import light from './assets/light.png'
 import { Fade } from 'react-awesome-reveal';
 import Offline from './components/Offline';
-
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   const [isOnline , setisOnline] = useState(navigator.onLine)
@@ -66,6 +67,8 @@ useEffect(() => {
 
   return (
     <Context.Provider value={{ theme, setTheme }}>
+      <Analytics/>\
+      <SpeedInsights/>
       {!isOnline ? (
         <Offline />
       ) : (
