@@ -67,7 +67,7 @@ useEffect(() => {
 
   return (
     <Context.Provider value={{ theme, setTheme }}>
-      <Analytics/>\
+      <Analytics/>
       <SpeedInsights/>
       {!isOnline ? (
         <Offline />
