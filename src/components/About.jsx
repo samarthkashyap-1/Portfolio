@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../assets/Samarth-Kashyap.pdf'
+import resume from '../assets/Samarth_Kashyap_Resume.pdf'
 import { Fade } from 'react-awesome-reveal';
 import { Context } from './Context';
 

@@ -20,7 +20,7 @@ const Projects = () => {
       {
         name: "feedback",
         img: img3,
-        link: "https://feedbackapp-chi.vercel.app/",
+        link: "https://feedback-app-rho-five.vercel.app/",
       },
       {
         name: "chandrafarms",
@@ -317,14 +317,14 @@ const Projects = () => {
                 <a
                   target="_blank"
                   className="hover:underline"
-                  href="https://feedbackapp-chi.vercel.app/"
+                  href="https://feedback-app-rho-five.vercel.app/"
                 >
                   Live
                 </a>
                 <a
                   target="_blank"
                   className="hover:underline"
-                  href="https://github.com/samarthkashyap-1/Feedbackapp"
+                  href="https://github.com/samarthkashyap-1/Feedback-app"
                 >
                   Github Repositary
                 </a>
