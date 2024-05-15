@@ -15,11 +15,12 @@ import light from './assets/light.png'
 import { Fade } from 'react-awesome-reveal';
 import Offline from './components/Offline';
 import { Analytics } from "@vercel/analytics/react";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 function App() {
   const [isOnline , setisOnline] = useState(navigator.onLine)
-  const [loader, setloader] = useState(true)
+  const [loader, setloader] = useState(false)
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? JSON.parse(localStorage.getItem("theme")) : false)
  
 const handleScroll = () => {
@@ -67,7 +68,28 @@ useEffect(() => {
 
   return (
     <Context.Provider value={{ theme, setTheme }}>
-      <Analytics/>
+      <Helmet>
+        <title>Samarth Kashyap | Portfolio</title>
+        <meta
+          name="description"
+          content="Welcome to Samarth Kashyap's portfolio. Showcasing projects, skills, and contact information."
+        />
+        <meta
+          name="keywords"
+          content="Samarth Kashyap, portfolio, web developer, projects, contact, skills"
+        />
+        <meta name="author" content="Samarth Kashyap" />
+        <meta property="og:title" content="Samarth Kashyap | Portfolio" />
+        <meta
+          property="og:description"
+          content="Welcome to Samarth Kashyap's portfolio. Showcasing projects, skills, and contact information."
+        />
+        <meta property="og:url" content="https://samarthkashyap.me" />
+        <meta property="og:type" content="website" />
+
+        <link rel="canonical" href="https://samarthkashyap.me" />
+      </Helmet>
+      <Analytics />
       {!isOnline ? (
         <Offline />
       ) : (
@@ -99,9 +121,15 @@ useEffect(() => {
                     className="hover:-translate-y-1 transition-all duration-300 ease-in-out"
                   >
                     {theme ? (
-                      <img src={night} alt="" className="invert" />
+                      <img
+                        src={night}
+                        width={200}
+                        height={200}
+                        alt=""
+                        className="invert"
+                      />
                     ) : (
-                      <img src={light} alt="" />
+                      <img src={light} width={200} height={200} alt="" />
                     )}
                   </div>
                 </Fade>
